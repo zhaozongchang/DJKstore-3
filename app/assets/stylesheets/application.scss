@@ -17,3 +17,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+ //让订单表单居中显示
+
+ .col-centered{
+   float: none;
+   margin: 0 auto;
+ }
