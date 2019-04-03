@@ -8,7 +8,7 @@
 
 
 u = User.new
-u.email = "admin.@qq.com"
+u.email = "admin@qq.com"
 u.password = "111111"
 u.password_confirmation = "111111"
 u.is_admin = true
