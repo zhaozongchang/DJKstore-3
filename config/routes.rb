@@ -20,12 +20,13 @@ Rails.application.routes.draw do
       post :pay_with_alipay
       post :pay_with_wechat
     end
-  end 
+  end
 
   resources :cart_items
 
   namespace :admin do
     resources :products
+    resources :orders
   end
 
   namespace :account do
