@@ -5,7 +5,7 @@
 <%= f.input :quantity %>
 <%= f.input :price %>
 
-<% if @product.image.persent? %>
+<% if @product.image.present? %>
 <span>目前商品图</span>
 <%= image_tag(@product.image.thumb.url) %>
 <% end %>

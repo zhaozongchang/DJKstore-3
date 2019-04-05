@@ -15,7 +15,14 @@
 //= require turbolinks
 //= require bootstrap/alert
 //= require bootstrap/dropdown
+//= require autosize.min
+//= require jquery.countdown
+//= require wow.min
 //= require_tree .
+
+$(document).ready(function(){
+  new WOW().init();
+})
 
 //顶部回到
 $(document).on('click', '#gotop', function () {
