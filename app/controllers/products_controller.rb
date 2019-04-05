@@ -1,10 +1,12 @@
 class ProductsController < ApplicationController
+  impressionist :actions => [:index,:show]
   def index
     @products = Product.all
   end
 
   def show
     @product = Product.find(params[:id])
+    impressionist(@product)
   end
 
   def add_to_cart
