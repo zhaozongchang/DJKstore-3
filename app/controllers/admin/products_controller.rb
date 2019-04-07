@@ -4,7 +4,7 @@ class Admin::ProductsController < ApplicationController
   layout "admin"
 
   def index
-    @products = Product.all
+    @products = Product.all.order("position ASC")
   end
 
   def new
@@ -27,11 +27,23 @@ class Admin::ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
     if @product.update(product_params)
-    redirect_to admin_product_path
+    redirect_to admin_products_path
   else
     render :edit
-   end 
+   end
   end
+
+  def move_up
+     @product = Product.find(params[:id])
+     @product.move_higher
+     redirect_to :back
+   end
+
+   def move_down
+     @product = Product.find(params[:id])
+     @product.move_lower
+     redirect_to :back
+   end
 
   private
 

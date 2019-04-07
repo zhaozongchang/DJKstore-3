@@ -13,3 +13,10 @@ u.password = "111111"
 u.password_confirmation = "111111"
 u.is_admin = true
 u.save
+
+u = User.new
+u.email = "865567799@qq.com"
+u.password = "111111"
+u.password_confirmation = "111111"
+u.is_admin = true
+u.save

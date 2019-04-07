@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   impressionist :actions => [:index,:show]
   def index
-    @products = Product.all
+    @products = Product.all.order("position ASC")
   end
 
   def show
