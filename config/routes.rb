@@ -6,6 +6,9 @@ Rails.application.routes.draw do
     member do
       post :add_to_cart
     end
+    collection do
+      get :search
+    end 
   end
 
   resources :carts do
@@ -31,7 +34,7 @@ Rails.application.routes.draw do
         post :move_up
         post :move_down
       end
-    end 
+    end
     resources :orders do
       member do
         post :cancel
