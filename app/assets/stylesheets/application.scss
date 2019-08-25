@@ -18,6 +18,29 @@
  @import "bootstrap";
  @import "font-awesome";
 
+
+ /***********通用样式开始***********/
+ html{
+   position: relative;
+   min-height: 100%;
+   display: block;
+ }
+ body {
+     font-family: 'Open sans', sans-serif;
+     font-weight: 300;
+     margin-bottom: 150px;
+     background-image: #f6f6f8;
+     // background-image: linear-gradient(#8b9da9, #fff6e4);
+     // background-color: #f2f2f2;
+ }
+
+  ul, ol, dl{
+     list-style: none;
+   }
+
+ /***************通用样式结束*****************/
+
+
  //让订单表单居中显示
 
  .col-centered{
@@ -157,7 +180,43 @@
   font-size: 12px;
 }
 
-body{
-background: #F5F5F5;
+/**********底部**********/
+   .footer1{
+     position:absolute;
+     bottom:-10px;
+     width:100%;
+     height:150px;
+     background-color:#f8f8f8;
+   }
 
-}
+   .footer1 .container{
+     margin-top: 20px;
+     color: #000;
+     width: 100%;
+   }
+
+   .soc-media-ul{
+     display: flex;
+     justify-content: center;
+
+   }
+
+   .soc-media-ul li{
+     padding: 5px;
+     list-style-type: none;
+   }
+
+   .soc-media-ul li a{
+     padding: 10px;
+     color: #000;
+     font-size: 20px;
+     // border: 2px solid;
+     // border-radius: 50%;
+     text-decoration: none;
+   }
+
+   .soc-media-ul li a:hover{
+     color: #93F9B9;
+   }
+
+/**********底部**********/

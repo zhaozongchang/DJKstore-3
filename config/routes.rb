@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'products#index'
+  root 'welcome#index'
 
   resources :products do
     member do
@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     end
     collection do
       get :search
-    end 
+    end
   end
 
   resources :carts do
