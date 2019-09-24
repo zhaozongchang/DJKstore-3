@@ -29,7 +29,10 @@
      font-family: 'Open sans', sans-serif;
      font-weight: 300;
      margin-bottom: 150px;
-     background-image: #f6f6f8;
+     margin-top: 65px;
+     background: #F8F8F8;
+    -webkit-font-smoothing: antialiased;
+    font: 14px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
      // background-image: linear-gradient(#8b9da9, #fff6e4);
      // background-color: #f2f2f2;
  }
@@ -37,6 +40,14 @@
   ul, ol, dl{
      list-style: none;
    }
+
+
+   .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+    }
+
 
  /***************通用样式结束*****************/
 
@@ -180,43 +191,84 @@
   font-size: 12px;
 }
 
+
+/**********navbar开始**********/
+.navbar-default{
+   background-color: #fff;
+   width: 100%;
+   border: none;
+   border-radius: 0;
+   box-shadow: 0 2px 4px rgba(0,0,0,.15);
+   position: fixed;
+   z-index: 999;
+   margin-top: -65px;
+}
+.navbar-header .navbar-brand{
+  color: #AB7FD1;
+  font-weight: 600;
+  font-size: bolder;
+}
+
+.navbar-header .navbar-brand:hover{
+  color: #BF9E6B;
+}
+
+/**********navbar结束**********/
+
+
 /**********底部**********/
    .footer1{
      position:absolute;
-     bottom:-10px;
+     bottom:-100px;
      width:100%;
-     height:150px;
-     background-color:#f8f8f8;
+     height:200px;
+     background-color:#fff;
+     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
    }
 
-   .footer1 .container{
-     margin-top: 20px;
-     color: #000;
-     width: 100%;
+   .wechat{
+     width: 1080px;
+     height: 155px;
+     margin: 0 auto;
+     margin-top: 25px;
    }
 
-   .soc-media-ul{
-     display: flex;
-     justify-content: center;
-
+   .wechat-lfet{
+     border-right: 2px solid #bbb;
+     width: 400px;
+     height: 155px;
+     margin-left: 140px;
+     float: left;
    }
 
-   .soc-media-ul li{
-     padding: 5px;
-     list-style-type: none;
+   .wechat-image img{
+     height: 150px;
+     width: 150px;
+     float: left;
    }
 
-   .soc-media-ul li a{
-     padding: 10px;
-     color: #000;
-     font-size: 20px;
-     // border: 2px solid;
-     // border-radius: 50%;
-     text-decoration: none;
+   .wechat-info{
+     margin-top: 25px;
+     line-height: 24px;
+   }
+
+   .wechat-info li:first-child{
+    line-height: 24px;
+    font-size: 15px;
+    font-family: "宋体";
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 0;
+   }
+
+   .wechat-right{
+     width: 500px;
+     height: 155px;
+     float: right;
    }
 
    .soc-media-ul li a:hover{
-     color: #93F9B9;
+     color: #BF9E6B;
    }
 
 /**********底部**********/

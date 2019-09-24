@@ -10,7 +10,7 @@
         <th width="220">Product Pic</th>
         <th>Name</th>
         <th>Price</th>
-        <th width="100"> Options</th>
+        <th width="150"> Options</th>
       </tr>
     </thead>
     <tbody>
@@ -21,8 +21,8 @@
           </td>
           <td>
             <%= link_to product_path(product) do %>
-              <% if product.image.present? %>
-                <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+              <% if product.photos.present? %>
+              <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
               <% else %>
                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
               <% end %>
@@ -35,9 +35,10 @@
             <%= product.price %>
           </td>
           <td>
-            <%= link_to("Edit", edit_admin_product_path(product)) %>
+            <%= link_to("编辑", edit_admin_product_path(product)) %>
             <%= link_to("上移", move_up_admin_product_path(product), :method => :post) %>
             <%= link_to("下移", move_down_admin_product_path(product), :method => :post) %>
+            <%= link_to("删除", admin_product_path(product), method: :delete, data: {confirm: "你确定要删除吗"})%>
           </td>
         </tr>
       <% end %>

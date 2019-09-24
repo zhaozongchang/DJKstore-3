@@ -1,14 +1,17 @@
-<h2>新增商品</h2>
+<h2 class="text-center">新增商品</h2>
+<div class="col-md-8 col-md-offset-2">
+  <%= simple_form_for [:admin,@product] do |f| %>
 
-<%= simple_form_for [:admin,@product] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :quantity %>
+  <%= f.input :price %>
+  <%= f.label :avatar %><br>
+  <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
+  <%= f.submit "Submit", data: {disable_with: "Submitting..."}%>
+  <% end %>
+</div>
 
-<%= f.input :title %>
-<%= f.input :description %>
-<%= f.input :quantity %>
-<%= f.input :price %>
-<%= f.input :image, as: :file %>
-<%= f.submit "Submit", data: {disable_with: "Submitting..."}%>
-<% end %>
 
 <script type="text/javascript">
   autosize($('#product_description'));

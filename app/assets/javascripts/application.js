@@ -20,6 +20,7 @@
 //= require jquery.countdown
 //= require wow.min
 //= require bootstrap/modal
+//= require bootstrap-sprockets
 //= require_tree .
 
 $(document).ready(function(){

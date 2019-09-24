@@ -1,3 +1,40 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/**********前台商品页面 show开始**********/
+.show-picture {
+  margin-top:20px;
+  margin-right: 150px;
+}
+.show-photo-xsmall-box{
+  height:80px;
+  width:400px;
+}
+.show-photo-xsmall-box.nav-tabs {
+  margin-top: 15px;
+  margin-right: 0;
+ }
+
+.show-photo-xsmall-box.nav-tabs li {
+  width: 18%;
+  margin-right: 15px;
+}
+.show-photo-xsmall-box.nav-tabs li a {
+  padding: 0;
+  margin: 0;
+}
+.show-photo-xsmall-box.nav-tabs li:last-of-type {
+  margin-right: 0;
+}
+
+.product-main-box{
+  margin-left: 10px;
+}
+
+.product-photos-box{
+  
+}
+
+/**********前台商品页面 show结束**********/

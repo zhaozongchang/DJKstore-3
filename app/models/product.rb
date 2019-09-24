@@ -5,4 +5,7 @@ class Product < ApplicationRecord
   validates :title, presence: true
   validates :quantity, presence: true
   validates :price, presence: true
+
+  has_many :photos
+  accepts_nested_attributes_for :photos
 end
