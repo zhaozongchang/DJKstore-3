@@ -80,14 +80,12 @@
   /**********前台商品页面 index结束**********/
 
 /**********前台商品页面 show开始**********/
-.product-show-box{
-  // border: 1px solid red;
+.product-show-box9{
   width: 1000px;
-  height: 900px;
-  margin: 20px auto;
+  margin: 0px auto;
+  margin-top: 20px;
 }
 .product-photos-box{
-  // border: 1px solid red;
   width: 520px;
   height: 500px;
   margin-left: 20px;
@@ -204,6 +202,115 @@
 }
 .purchase span{
   margin-right: 10px;
+}
+// 评论部分
+.product-comment{
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 950px;
+  margin: 0 auto;
+}
+.comment-head{
+  height: 60px;
+  background: #EEECEF;
+  border-bottom: 1px solid #ccc;
+}
+.comment-head li{
+  display: inline-block;
+  line-height: 60px;
+  color: #523669;
+}
+.comment-head li a{
+  display: inline-block;
+  color: #523669;
+  text-decoration: none;
+  font-size: 16px;
+  width: 180px;
+  height: 59px;
+  text-align: center;
+}
+.comment-head li a:first-child{
+  margin-left: -40px;
+  // border-left: 1px solid #ccc;
+}
+
+.pingjia{
+  margin-left: 40px;
+}
+
+.pingjia a{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.comment-head li a:hover{
+  background-color: #fff;
+}
+
+.tab-content{
+
+}
+.product-description2{
+  font-size: 20px;
+  background-color: #EEECEF;
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #523669;
+  box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.15);
+}
+.tab-content .product-image{
+  width: 800px;
+  margin: 0 auto;
+}
+.tab-content .product-image .small-product img{
+  width: 800px;
+  height: 400px;
+}
+
+.faq{
+  // border: 1px solid red;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.15);
+  padding: 10px;
+  // text-align: center;
+}
+.question{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-show{
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.comment-content-1{
+  font-size: 12px;
+  font-weight: bold;
+  color: #bbb;
+
+}
+
+.comment-centent{
+  margin-top: -30px;
+}
+
+.comment-area{
+  margin-top: 20px;
+}
+
+.comment-area span:nth-child(1){
+  padding: 10px;
+  display: inline-block;
+  width: 950px;
+}
+.comment-area {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /**********前台商品页面 show结束**********/

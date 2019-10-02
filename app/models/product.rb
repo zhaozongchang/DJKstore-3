@@ -7,5 +7,6 @@ class Product < ApplicationRecord
   validates :price, presence: true
 
   has_many :photos
+  has_many :reviews
   accepts_nested_attributes_for :photos
 end

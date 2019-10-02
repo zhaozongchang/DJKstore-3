@@ -1,4 +1,4 @@
-<div class="product-show-box">
+<div class="product-show-box9">
   <div class="product-photos-box">
     <% if @photos.present? %>
    <div class="show-picture">
@@ -70,9 +70,59 @@
         <% else %>
         已销售一空，无法购买
         <% end %>
-        <span>
-          <%= link_to("立即购买", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right") %>
-        </span>
     </div>
   </section>
+  <div style="clear: both;"></div>
+  <!-- 评论 -->
+    <div class="product-comment">
+      <ul class="comment-head">
+        <li role="presentation" class="active">
+          <a href="#tab_default_1" data-toggle="tab">宝贝详情</a>
+        </li>
+        <li class="pingjia">
+          <a href="#tab_default_2" data-toggle="tab">宝贝评价(<%= @product.reviews.count %>) </a>
+        </li>
+      </ul>
+      <br />
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab_default_1">
+           <p class="product-description2 text-center">产品展示</p>
+            <!--商品大图展示 -->
+             <div class="product-image">
+               <% @photos.each_with_index do |p,index| %>
+                 <% if index <5 %>
+                   <div class="small-product">
+                     <%= image_tag p.avatar.url%>
+                   </div>
+                 <% end %>
+               <% end %>
+             </div>
+             <p class="product-description2 text-center">常见问题</p>
+           <div class="faq">
+             <p class="question">顾客：请问包邮吗？</p>
+             <p class="answer">包邮，默认使用顺丰快递发货，配送范围覆盖全国大部分地区（港澳台地区除外）。</p>
+             <p class="question">顾客：如何申请退货？</p>
+             <p class="answer">
+               1.自签收之日起7日内，顾客可申请无忧退货，退款将原路返还，预计1-5个工作日到账；<br />
+               2.退货流程：确认收货-申请退货-客服审核通过-用户寄回商品-仓库签收验货-退款审核-退款完成；<br />
+               3.因客户个人原因产生的退货，购买和寄回运费由客户个人承担。<br />
+             </p>
+             <p class="question">顾客：如何开具发票？</p>
+             <p class="answer">如需开具普通发票，请在下单时联系客服办理，我们将虽货物一起快递给您；</p>
+           </div>
+        </div><!-- End of tab_default_1 -->
+
+       <div class="tab-pane comment-centent" id="tab_default_2">
+            <div class="row">
+              <div class="col-sm-12 ">
+                <div >
+                  <%= render @product.reviews%>
+                  <%= render "reviews/form"%>
+                </div>
+              </div>
+            </div>
+          </div><!-- End of tab_default_2 -->
+        </div><!-- End of tab-content -->
+    </div>
+    <div style="clear: both;"></div>
 </div>
