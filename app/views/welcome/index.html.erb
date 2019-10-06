@@ -1,74 +1,16 @@
 <div class="welcome-box">
   <!--===== 广告轮播 =====-->
   <section class="product-category">
-    <ul class="nav-list">
-      <li>
-        <p>
-          <a href="#">男装</a>
-          <span>/</span>
-          <a href="#">女装</a>
-          <span>/</span>
-          <a href="#">童装</a>
-        </p>
-      </li>
-      <li>
-        <p>
-          <a href="#">美妆</a>
-          <span>/</span>
-          <a href="#">个护</a>
-        </p>
-      </li>
-      <li>
-        <p>
-          <a href="#">男鞋</a>
-          <span>/</span>
-          <a href="#">女鞋</a>
-          <span>/</span>
-          <a href="#">箱包</a>
-        </p>
-      </li>
-      <li>
-        <p>
-          <a href="#">食品</a>
-          <span>/</span>
-          <a href="#">酒类</a>
-          <span>/</span>
-          <a href="#">生鲜</a>
-        </p>
-      </li>
-      <li>
-        <p>
-          <a href="#">电脑</a>
-          <span>/</span>
-          <a href="#">办公</a>
-        </p>
-      </li>
-      <li>
-        <p>
-          <a href="#">图书</a>
-          <span>/</span>
-          <a href="#">文娱</a>
-          <span>/</span>
-          <a href="#">电子书</a>
-        </p>
-      </li>
-      <li>
-        <p>
-          <a href="#">家居</a>
-          <span>/</span>
-          <a href="#">家居</a>
-          <span>/</span>
-          <a href="#">家装</a>
-        </p>
-      </li>
-      <li>
-        <p>
-          <a href="#">母婴</a>
-          <span>/</span>
-          <a href="#">玩具乐器</a>
-        </p>
-      </li>
-    </ul>
+    <div class="nav-list">
+      <p><%= link_to("食品", food_products_path) %></p>
+      <p><%= link_to("生鲜", fresh_products_path) %></p>
+      <p><%= link_to("男装", men_products_path) %></p>
+      <p><%= link_to("女装", women_products_path) %></p>
+      <p><%= link_to("美妆", beautiful_products_path) %></p>
+      <p><%= link_to("电脑", computer_products_path) %></p>
+      <p><%= link_to("图书", books_products_path) %></p>
+      <p><%= link_to("家居", furniture_products_path) %></p>
+    </div>
   </section>
   <section class="intro-box">
     <div class="row">
@@ -83,36 +25,36 @@
 
           <!--===== 轮播内容 =====-->
           <div class="carousel-inner lunfan-content" role="listbox">
-            <div class="item active lunfan1">
-              <%= link_to '#', target: "_blank" do %> <!-- 图片连结，点击另开视窗 -->
+            <div class="item lunfan1">
+              <%= link_to product_path(52), target: "_blank" do %>
                 <div class="lunfan">
-                  <%= image_tag("https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") %>
+                  <img src="http://bfs.biyao.com/group1/M00/9A/3C/rBACW12PH1eAaZ_WAAGdurJfXhs412.jpg" alt="" class="img-xys">
                 </div>
                 <div class="carousel-caption">
-                  <h4>流芒来袭</h4> <!-- 标题 -->
-                  <br><span>打造优质烹饪环境，让生活更有趣</span> <!-- 内文 -->
+                  <h4>玫瑰蓝莓雪花酥</h4>
+                  <br><span>云南低温发酵玫瑰花、进口安佳奶油、大兴安岭野生蓝莓干、酸甜可口</span>
                 </div>
               <% end %>
             </div>
             <div class="item lunfan1">
-              <%= link_to '#', target: "_blank" do %>
+              <%= link_to '#', target: "_blank" do %> <!-- 图片连结，点击另开视窗 -->
+                <div class="lunfan">
+                  <%= image_tag("http://bfs.biyao.com/group1/M00/18/99/rBACVFmT_OKAfUQCAAG6EbAiq2U157.jpg") %>
+                </div>
+                <div class="carousel-caption">
+                  <h4>精致小提花长袖衬衫</h4> <!-- 标题 -->
+                  <br><span>舒适亲肤，100支高纱支织造，手感更细腻柔滑，成衣免烫处理工艺平整不易皱</span> <!-- 内文 -->
+                </div>
+              <% end %>
+            </div>
+            <div class="item active lunfan1">
+              <%= link_to product_path(52), target: "_blank" do %>
                 <div class="lunfan">
                   <img src="http://bfs.biyao.com/group1/M00/7B/2A/rBACW112GbKAItCkAAI5K03cOIY893.jpg" alt="" class="img-xys">
                 </div>
                 <div class="carousel-caption">
-                  <h4>创造美食</h4>
-                  <br><span>最新创意食谱，每天都充满变化</span>
-                </div>
-              <% end %>
-            </div>
-            <div class="item lunfan1">
-              <%= link_to '#', target: "_blank" do %>
-                <div class="lunfan">
-                  <img src="https://images.pexels.com/photos/2335692/pexels-photo-2335692.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="img-xys">
-                </div>
-                <div class="carousel-caption">
-                  <h4>精选厨具</h4>
-                  <br><span>优质进口厨具，做菜更加便利</span>
+                  <h4>天然乳胶枕</h4>
+                  <br><span>泰国进口天然乳胶原料 乳胶含量高达90% 透气缓解颈椎压力</span>
                 </div>
               <% end %>
             </div>
@@ -176,13 +118,13 @@
     </div>
     <div class="pinpai">
       <div class="head-image">
-        <%= image_tag("https://images.pexels.com/photos/1124065/pexels-photo-1124065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") %> <!-- 创办人头像 1 -->
+        <%= image_tag("https://upload-images.jianshu.io/upload_images/12661863-31cb7e52913214e8.png?imageMogr2/auto-orient/strip|imageView2/2/w/526/format/webp") %> <!-- 创办人头像 1 -->
       </div>
       <div class="head-info">
-        <p>我们希望能为大家带来种类多样，价格低廉并且设计独特，且让大多数人可以负担的起的家具家饰品，为了实现这样的想法，我们从产品设计，原料采购，生产制造，到在分店中的经营，都不断在创新和寻求改善。 </p> <!-- 创办人介绍 -->
+        <p>本购物网站是我独立开发，使用Ruby on Rails写后端，用CSS、HTML、JS写前端，并部署上线的。<br>目的是让用户可以快速找到自己想要的商品，放入购物车并生成订单进行付款。</p> <!-- 创办人介绍 -->
       </div>
       <div class="head-info2">
-        <p>我们希望能为大家带来种类多样，价格低廉并且设计独特，且让大多数人可以负担的起的家具家饰品，为了实现这样的想法，我们从产品设计，原料采购，生产制造，到在分店中的经营，都不断在创新和寻求改善。 </p> <!-- 创办人介绍 -->
+        <p>一个对技术有好奇心，且善于学习，乐于分享的终身学习者。<br>我希望在不断学习成长的道路上能认识更多热爱编程热爱学习的朋友，共同建造有趣的人生！ </p> <!-- 创办人介绍 -->
       </div>
       <div class="head-image2">
         <%= image_tag("https://images.pexels.com/photos/1124065/pexels-photo-1124065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") %> <!-- 创办人头像 1 -->
@@ -203,20 +145,98 @@
       <div class="row">
         <div class="col-md-6 col-xs-8 col-sm-6">
             <div class="thumbnail">
+              <%= link_to product_path(52), target: "_blank" do %>
                <%= image_tag("http://bfs.biyao.com/group1/M00/7B/2A/rBACW112GbKAItCkAAI5K03cOIY893.jpg", class:"img-rounded")%><!-- 商品图片 -->
               <div class="caption">
                 <div class="item-price">
-                  <span>￥25</span>
+                  <span>￥169</span>
                   <span>爆品</span>
                   <span>一起拼</span>
                 </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
+                <p class="item-title">天然乳胶枕</p> <!-- 商品名称 -->
               </div>
+              <% end %>
             </div>
         </div>
         <div class="col-md-6 col-xs-8 col-sm-6">
             <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/1B/2A/rBACYVmfzGGAah-BAADAN3n6Vgc852.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <%= link_to product_path(50), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/22/A5/rBACYVoL9A-AQfG8AADOXBWthHQ451.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <div class="caption">
+                <div class="item-price">
+                  <span>￥128</span>
+                  <span>爆品</span>
+                  <span>一起拼</span>
+                </div> <!-- 商品价格 -->
+                <p class="item-title">冻干抗皱精华套盒</p> <!-- 商品名称 -->
+              </div>
+              <% end %>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-8 col-sm-6">
+            <div class="thumbnail">
+              <%= link_to product_path(45), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/18/99/rBACVFmT_OKAfUQCAAG6EbAiq2U157.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <div class="caption">
+                <div class="item-price">
+                  <span>￥259</span>
+                  <span>爆品</span>
+                  <span>一起拼</span>
+                </div> <!-- 商品价格 -->
+                <p class="item-title">精致小提花长袖衬衫</p> <!-- 商品名称 -->
+              </div>
+              <% end %>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-8 col-sm-6">
+            <div class="thumbnail">
+              <%= link_to product_path(53), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/6C/03/rBACYV1mG7uAZzezAAGjfMm7aXE492.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <div class="caption">
+                <div class="item-price">
+                  <span>￥199</span>
+                  <span>爆品</span>
+                  <span>一起拼</span>
+                </div> <!-- 商品价格 -->
+                <p class="item-title">小型便携式智能电热水壶</p> <!-- 商品名称 -->
+              </div>
+              <% end %>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-8 col-sm-6">
+            <div class="thumbnail">
+              <%= link_to product_path(43), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/57/87/rBACVF1Q_LqAG5h6AAI-wRAwt-c866.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <div class="caption">
+                <div class="item-price">
+                  <span>￥399</span>
+                  <span>爆品</span>
+                  <span>一起拼</span>
+                </div> <!-- 商品价格 -->
+                <p class="item-title">简约天丝家居服分体式套装</p> <!-- 商品名称 -->
+              </div>
+              <% end %>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-8 col-sm-6">
+            <div class="thumbnail">
+              <%= link_to product_path(54), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/9A/3C/rBACW12PH1eAaZ_WAAGdurJfXhs412.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <div class="caption">
+                <div class="item-price">
+                  <span>￥58</span>
+                  <span>爆品</span>
+                  <span>一起拼</span>
+                </div> <!-- 商品价格 -->
+                <p class="item-title">玫瑰蓝莓雪花酥</p> <!-- 商品名称 -->
+              </div>
+              <% end %>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-8 col-sm-6">
+            <div class="thumbnail">
+              <%= link_to product_path(48), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/90/C2/rBACVF2JcS6ARG9TAAC_6L1L9V0905.jpg", class:"img-rounded")%><!-- 商品图片 -->
               <div class="caption">
                 <div class="item-price">
                   <span>￥25</span>
@@ -225,110 +245,52 @@
                 </div> <!-- 商品价格 -->
                 <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
               </div>
+              <% end %>
             </div>
         </div>
         <div class="col-md-6 col-xs-8 col-sm-6">
             <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/6A/76/rBACVF1l-KqAEcGzAAFuWmii1mY835.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <%= link_to product_path(55), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/2E/D3/rBACW1qWjb2AKygSAADnUThCxoM716.jpg", class:"img-rounded")%><!-- 商品图片 -->
               <div class="caption">
                 <div class="item-price">
-                  <span>￥25</span>
+                  <span>￥89</span>
                   <span>爆品</span>
                   <span>一起拼</span>
                 </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
+                <p class="item-title">玻尿酸淡纹变色润唇膏</p> <!-- 商品名称 -->
               </div>
+            </div>
+            <% end %>
+        </div>
+        <div class="col-md-6 col-xs-8 col-sm-6">
+            <div class="thumbnail">
+              <%= link_to product_path(49), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/64/FA/rBACYVvOw0WAIA-0AAAzGE9WEYo189.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <div class="caption">
+                <div class="item-price">
+                  <span>￥88</span>
+                  <span>爆品</span>
+                  <span>一起拼</span>
+                </div> <!-- 商品价格 -->
+                <p class="item-title">皙钻亮采美颜精华</p> <!-- 商品名称 -->
+              </div>
+              <% end %>
             </div>
         </div>
         <div class="col-md-6 col-xs-8 col-sm-6">
             <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/57/2F/rBACW11NQ-2AOhrzAAH2r2Igq4s068.jpg", class:"img-rounded")%><!-- 商品图片 -->
+              <%= link_to product_path(41), target: "_blank" do %>
+               <%= image_tag("http://bfs.biyao.com/group1/M00/98/4B/rBACVF2PHA2AZHXXABNBfsiUrUE437_800x800.jpg", class:"img-rounded")%><!-- 商品图片 -->
               <div class="caption">
                 <div class="item-price">
-                  <span>￥25</span>
+                  <span>￥29</span>
                   <span>爆品</span>
                   <span>一起拼</span>
                 </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
+                <p class="item-title">红枣膳食纤维蜂蜜蛋糕</p> <!-- 商品名称 -->
               </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-8 col-sm-6">
-            <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/7B/2A/rBACW112GbKAItCkAAI5K03cOIY893.jpg", class:"img-rounded")%><!-- 商品图片 -->
-              <div class="caption">
-                <div class="item-price">
-                  <span>￥25</span>
-                  <span>爆品</span>
-                  <span>一起拼</span>
-                </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
-              </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-8 col-sm-6">
-            <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/1B/2A/rBACYVmfzGGAah-BAADAN3n6Vgc852.jpg", class:"img-rounded")%><!-- 商品图片 -->
-              <div class="caption">
-                <div class="item-price">
-                  <span>￥25</span>
-                  <span>爆品</span>
-                  <span>一起拼</span>
-                </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
-              </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-8 col-sm-6">
-            <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/6A/76/rBACVF1l-KqAEcGzAAFuWmii1mY835.jpg", class:"img-rounded")%><!-- 商品图片 -->
-              <div class="caption">
-                <div class="item-price">
-                  <span>￥25</span>
-                  <span>爆品</span>
-                  <span>一起拼</span>
-                </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
-              </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-8 col-sm-6">
-            <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/7B/2A/rBACW112GbKAItCkAAI5K03cOIY893.jpg", class:"img-rounded")%><!-- 商品图片 -->
-              <div class="caption">
-                <div class="item-price">
-                  <span>￥25</span>
-                  <span>爆品</span>
-                  <span>一起拼</span>
-                </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
-              </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-8 col-sm-6">
-            <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/1B/2A/rBACYVmfzGGAah-BAADAN3n6Vgc852.jpg", class:"img-rounded")%><!-- 商品图片 -->
-              <div class="caption">
-                <div class="item-price">
-                  <span>￥25</span>
-                  <span>爆品</span>
-                  <span>一起拼</span>
-                </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
-              </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-8 col-sm-6">
-            <div class="thumbnail">
-               <%= image_tag("http://bfs.biyao.com/group1/M00/6A/76/rBACVF1l-KqAEcGzAAFuWmii1mY835.jpg", class:"img-rounded")%><!-- 商品图片 -->
-              <div class="caption">
-                <div class="item-price">
-                  <span>￥25</span>
-                  <span>爆品</span>
-                  <span>一起拼</span>
-                </div> <!-- 商品价格 -->
-                <p class="item-title">好评999+ 烟台苹果</p> <!-- 商品名称 -->
-              </div>
+              <% end %>
             </div>
         </div>
       </div>
@@ -357,26 +319,26 @@
             <%= image_tag("https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "img-circle") %> <!-- 图片 -->
           </div>
           <div class="feedback-info">
-            <p>这是我用过最好的网站，商品众多、下单方便、送货快速，还能订制特殊规格的锅具，强力推荐。</p>
+            <p>第九块商城是我用过最好的网站、下单方便、送货快速，还能订制特殊规格的商品，强力推荐。</p>
             <strong>Eddie - 上班族</strong> <!-- 介绍 -->
           </div>
         </div>
         <div class="item beijing">
           <div class="feedback-image">
-            <%= image_tag("https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "img-circle") %> <!-- 图片 -->
+            <%= image_tag("https://upload-images.jianshu.io/upload_images/12661863-f678a2013b1cd332.png?imageMogr2/auto-orient/strip|imageView2/2/w/512/format/webp", class: "img-circle") %> <!-- 图片 -->
           </div>
           <div class="feedback-info">
-            <p>这是我用过最好的网站，商品众多、下单方便、送货快速，还能订制特殊规格的锅具，强力推荐。</p>
+            <p>第九块商城是我用过最好的网站、下单方便、送货快速，还能订制特殊规格的商品，强力推荐。</p>
             <strong>Eddie - 上班族</strong> <!-- 介绍 -->
           </div>
         </div>
         <div class="item beijing">
           <div class="feedback-image">
-            <%= image_tag("https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", class: "img-circle") %> <!-- 图片 -->
+            <%= image_tag("https://upload.jianshu.io/users/upload_avatars/12661863/3facf377-d251-46fc-8292-56396141b014.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/90/h/90/format/webp", class: "img-circle") %> <!-- 图片 -->
           </div>
           <div class="feedback-info">
-            <p>这是我用过最好的网站，商品众多、下单方便、送货快速，还能订制特殊规格的锅具，强力推荐。</p>
-            <strong>Eddie - 上班族</strong> <!-- 介绍 -->
+            <p>第九块商城是我用过最好的网站、下单方便、送货快速，还能订制特殊规格的商品，强力推荐。</p>
+            <strong>Zhaochang - 上班族</strong> <!-- 介绍 -->
           </div>
         </div>
       </div>
@@ -402,6 +364,6 @@
 
   <!--===== 立即购买 =====-->
   <section class="text-center goumai">
-    <%= link_to('立即购买', '#', class:'btn btn-push' ) %>
+    <%= link_to('立即购买', products_path, class:'btn btn-push' ) %>
   </section>
 </div>

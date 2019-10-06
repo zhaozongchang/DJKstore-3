@@ -10,19 +10,26 @@
 .product-category{
   background-color: #343a40;
   float: left;
-  width: 205px;
-  height: 360px;
+  width: 180px;
+  height: 380px;
 
 }
 
 .product-category .nav-list p{
   height: 34px;
   line-height: 34px;
-  margin-top: 5px;
+  text-align: center;
+  margin-top: 12px;
 }
+// .product-category .nav-list p:hover{
+//   background-color: #ffffff;
+//   opacity:0.1;
+//   color: #ffffff;
+// }
 .product-category .nav-list a{
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 3px;
   text-decoration: none;
   line-height: 35px;
 }
@@ -41,13 +48,13 @@
 /****轮番大图开始****/
 .intro-box{
   float: right;
-  width: 895px;
-  height: 360px;
+  width: 920px;
+  height: 380px;
 }
 
 .lunfan1 img{
-  height: 360px;
-  width: 895px;
+  height: 380px;
+  width: 940px;
 }
 
 /*****服务优势开始******/
@@ -150,7 +157,7 @@
 }
 
 .head-info,.head-info2 p{
-  text-indent: 28px;
+  // text-indent: 28px;
   line-height: 25px;
   font-weight: bold;
 }
@@ -165,6 +172,10 @@
   background-color: #F4F4F4;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24);
   border-radius: 2px;
+}
+
+.product-list .thumbnail a{
+  text-decoration: none;
 }
 
 .show-box .thumbnail img{

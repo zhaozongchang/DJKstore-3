@@ -260,12 +260,13 @@
   box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.15);
 }
 .tab-content .product-image{
-  width: 800px;
+  width: 600px;
   margin: 0 auto;
 }
 .tab-content .product-image .small-product img{
-  width: 800px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
+  box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.15);
 }
 
 .faq{
@@ -314,3 +315,19 @@
 }
 
 /**********前台商品页面 show结束**********/
+
+
+/**********前台商品页面 category开始**********/
+.category-title{
+  height: 60px;
+  width: 895px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.10);
+  border-radius: 5px;
+
+}
+.text-center{
+  line-height: 60px;
+}
+/**********前台商品页面 category结束**********/
