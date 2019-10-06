@@ -199,6 +199,21 @@
 }
 .purchase{
   display: inline-block;
+  margin-left: 10px;
+}
+.purchase a{
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #523669;
+  text-align: center;
+  line-height: 40px;
+}
+.purchase a:hover{
+  color: #fff;
 }
 .purchase span{
   margin-right: 10px;

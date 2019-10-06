@@ -2,9 +2,12 @@ Rails.application.routes.draw do
   devise_for :users
   root 'welcome#index'
 
+  resources :favorites
   resources :products do
     member do
       post :add_to_cart
+      post :favorite
+      post :unfavorite
     end
     collection do
       get :search
@@ -19,6 +22,8 @@ Rails.application.routes.draw do
     end
     resources :reviews
   end
+
+
 
   resources :carts do
     collection do

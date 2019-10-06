@@ -62,6 +62,20 @@ class ProductsController < ApplicationController
    @products = Product.where(:category_id => 8)
  end
 
+ def favorite
+    @product = Product.find(params[:id])
+    current_user.favorite_products << @product
+    flash[:notice] = "您已收藏商品"
+    redirect_to :back
+  end
+
+  def unfavorite
+    @product = Product.find(params[:id])
+    current_user.favorite_products.delete(@product)
+    flash[:notice] = "您已取消收藏商品"
+    redirect_to :back
+  end
+
  protected
 
  def validate_search_key
