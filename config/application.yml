@@ -10,14 +10,14 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
-production:
-  qiniu_access_key: BkpPMxNFJcc-efNPK-k5CgIKnGkOoLV7WvDTRjLU  # 你的 qiniu AccessKey
+ production:
+   qiniu_access_key: BkpPMxNFJcc-efNPK-k5CgIKnGkOoLV7WvDTRjLU  # 你的 qiniu AccessKey
 
-  qiniu_secret_key: NK4uAnv1ZGE1vhpWdtD3bnWi62aZRpuEqQF94Z5y  # 你的 qiniu SecretKey
+   qiniu_secret_key: NK4uAnv1ZGE1vhpWdtD3bnWi62aZRpuEqQF94Z5y  # 你的 qiniu SecretKey
 
-  qiniu_bucket: djkstore-v2  # 你的 qiniu bucket
+   qiniu_bucket: djkstore-v2  # 你的 qiniu bucket
 
-  qiniu_bucket_domain: pyxqd4vnt.bkt.clouddn.com  # 你的 qiniu bucket domain
+   qiniu_bucket_domain: pyxqd4vnt.bkt.clouddn.com  # 你的 qiniu bucket domain
 
 
 

@@ -50,6 +50,7 @@ gem 'will_paginate-bootstrap'
 gem 'seo_helper'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem 'figaro'
 
 
 group :development, :test do
